@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BookInformation...</title>
+</head>
+<body>
+
+Book info invoked..!
+{{books}}
+
+<form action="http://localhost:8081/consumer/savebook/" method="post">
+    <br><br>
+    {% csrf_token %}
+    Book Id : <input type="text" name="bid"><br><br>
+    Book Name : <input type="text" name="book_name"><br><br>
+    Book Price : <input type="text" name="book_price"><br><br>
+    Book Qty : <input type="text" name="book_qty"><br><br>
+    Book Author : <input type="text" name="author_name"><br><br>
+    Book Publication : <input type="text" name="book_publication"><br><br>
+    <input type="submit">
+    <br><br>
+
+</form>
+
+
+</body>
+</html>
